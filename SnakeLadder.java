@@ -9,8 +9,9 @@ public class SnakeLadder {
 		
 		int Die=(int)Math.floor(Math.random()*10)%6+1;
 		System.out.println("Your Die is :" +Die);
-		int playerCheck=(int)Math.floor(Math.random()*10)%3+1;
 		
+		for(position=0; position<=100; position++ ) {
+			int playerCheck=(int)Math.floor(Math.random()*10)%3+1;
 		switch (playerCheck) {
 		case 1:
 			System.out.println("No Play You are in the same position");
@@ -22,16 +23,15 @@ public class SnakeLadder {
 			
 		case 3:
 			position=position-Die;
-			System.out.println("your position get back by::" + position);
 			
 			if (position<0) {
 					  position = 0;
 				  }
-					 System.out.println( "Your current Position is::" + position );
+					 System.out.println( "Your Position after the snake is::" + position );
 				   break;
 			
 		}
 		
 	}
-
+	}
 }
