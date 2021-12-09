@@ -7,7 +7,9 @@ public class SnakeLadder {
 		int position=0;
 		System.out.println("Your Starting position is::" + position);
 		
-
+		int Dice=(int)Math.floor(Math.random()*10)%6+1;
+		System.out.println("Your Dice is :" +Dice);
+		
 	}
 
 }
