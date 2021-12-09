@@ -10,7 +10,7 @@ public class SnakeLadder {
 		int Die=(int)Math.floor(Math.random()*10)%6+1;
 		System.out.println("Your Die is :" +Die);
 		
-		for(position=0; position<=100; position++ ) {
+		for(position=0; position<=99; position++ ) {
 			int playerCheck=(int)Math.floor(Math.random()*10)%3+1;
 		switch (playerCheck) {
 		case 1:
